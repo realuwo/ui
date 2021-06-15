@@ -171,28 +171,6 @@ function DiscordLib:Window(text)
 	CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
 	CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
-	MinimizeBtn.Name = "MinimizeButton"
-	MinimizeBtn.Parent = TopFrame
-	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-	MinimizeBtn.BackgroundTransparency = 0
-	MinimizeBtn.Position = UDim2.new(0.917947114, 0, -0.0169996787, 0)
-	MinimizeBtn.Size = UDim2.new(0, 28, 0, 22)
-	MinimizeBtn.Font = Enum.Font.Gotham
-	MinimizeBtn.Text = ""
-	MinimizeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	MinimizeBtn.TextSize = 14.000
-	MinimizeBtn.BorderSizePixel = 0
-	MinimizeBtn.AutoButtonColor = false
-
-	MinimizeIcon.Name = "MinimizeLabel"
-	MinimizeIcon.Parent = MinimizeBtn
-	MinimizeIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	MinimizeIcon.BackgroundTransparency = 1.000
-	MinimizeIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
-	MinimizeIcon.Size = UDim2.new(0, 17, 0, 17)
-	MinimizeIcon.Image = "http://www.roblox.com/asset/?id=6035067836"
-	MinimizeIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
-
 	ServersHolder.Name = "ServersHolder"
 	ServersHolder.Parent = TopFrameHolder
 
