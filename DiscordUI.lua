@@ -487,33 +487,6 @@ function DiscordLib:Window(text)
 	CloseSettingsBtn.MouseLeave:Connect(function()
 		CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 	end)
-	
-	UserInputService.InputBegan:Connect(
-		function(io, p)
-			if io.KeyCode == Enum.KeyCode.RightControl then
-				if settingsopened == true then
-					settingsopened = false
-					TopFrameHolder.Visible = true
-					ServersHoldFrame.Visible = true
-					SettingsHolder:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-					TweenService:Create(
-						Settings,
-						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundTransparency = 1}
-					):Play()
-					for i,v in next, SettingsHolder:GetChildren() do
-						TweenService:Create(
-							v,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundTransparency = 1}
-						):Play()
-					end
-					wait(.3)
-					SettingsFrame.Visible = false
-				end
-			end
-		end
-	)
 
 	TextLabel.Parent = CloseSettingsBtn
 	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
