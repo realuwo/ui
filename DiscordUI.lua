@@ -397,7 +397,7 @@ function DiscordLib:Window(text)
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
-	local DiscordInfo = Instance.new("TextLabel")
+	
 	local CurrentSettingOpen = Instance.new("TextLabel")
 
 	SettingsFrame.Name = "SettingsFrame"
